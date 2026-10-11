@@ -26,21 +26,24 @@ The dataset is not redistributed in this repository. Users must obtain it from a
 Dataset preparation, metadata requirements, and expected directory structure should be documented before attempting to reproduce the experiments.
 
 ## Project structure
-
-- `configs/` — experiment configuration files
-- `src/` — model training, sampling, and analysis scripts
-- `d3_viz/` — interactive D3.js visualization
-- `viz_export/` — exported artifacts used by the visualization, where applicable
-- `requirements.txt` — Python dependencies
-
-Dataset files, model checkpoints, training logs, and generated artifacts are not intended to be committed to the repository.
+- .venv/ — local virtual environment (ignored in Git)
+- configs/ — experiment configuration (dataset, model, training, sampling parameters)
+- src/ — training, sampling, and export scripts
+- d3_viz/ — interactive visualization (HTML/CSS/JS) for UMAP + nearest-neighbor analysis
+- viz_export/ — exported artifacts for visualization (e.g., JSON files; optionally images depending on your setup)
+- data/ — dataset location (expected: data/archive.zip) (ignored in Git)
+- ckpts/ — checkpoints (ignored in Git)
+- runs/ — logs/outputs (ignored in Git)
+- debug_roundtrip/ — debug artifacts (ignored in Git)
+- requirements.txt — Python dependencies
 
 ## Requirements
 
 - Python 3.10 or a compatible version verified against the project dependencies
 - PyTorch and a compatible execution environment
 - A GPU is recommended for training
-
+- Dataset: https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
+  
 Install the dependencies:
 
 ```bash
