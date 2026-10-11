@@ -62,14 +62,3 @@ This repository represents a proof of concept rather than a validated clinical s
 
 Synthetic images must not be interpreted as clinical evidence or as a replacement for real medical data.
 
-## Relationship to subsequent work
-
-This repository represents an earlier DDPM experiment. It is separate from the subsequent latent diffusion model experiments conducted at a higher image resolution.
-
-## Citation
-
-If you use this repository in academic work, please cite the repository URL and the relevant dataset and methodological references. A formal citation record can be added when the project is assigned a publication or archival identifier.
-
-## License
-
-A license has not yet been specified. Reuse and redistribution permissions should be clarified before the repository is presented as an open-source project.
